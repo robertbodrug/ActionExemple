@@ -8,9 +8,11 @@ class SimpleCalculatorTest {
 
     @Test
     void testAdd() {
+
         SimpleCalculator calculator = new SimpleCalculator();
         assertEquals(5, calculator.add(2, 3));
         assertEquals(-1, calculator.add(-4, 3));
+
     }
 
     @Test
