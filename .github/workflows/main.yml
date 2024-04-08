@@ -2,8 +2,9 @@ name: Run unit tests on PRs to main
 
 on:
   pull_request:
-    branches:
-      - main
+    branches:[main]
+  push:
+    branches: [ main ]
 
 jobs:
   test:
@@ -19,5 +20,8 @@ jobs:
         distribution: 'openjdk'
         java-version: '17'
 
+    - name: Grant execute permission for gradlew
+      run: chmod +x ./gradlew
+      
     - name: Run tests
       run: ./gradlew test
