@@ -2,7 +2,7 @@ name: Run unit tests on PRs to main
 
 on:
   pull_request:
-    branches:[main]
+    branches: [main]
   push:
     branches: [ main ]
 
