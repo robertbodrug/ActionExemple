@@ -18,8 +18,8 @@ jobs:
     - name: Set up JDK
       uses: actions/setup-java@v4
       with:
-        distribution: 'openjdk'
         java-version: '17'
+        distribution: 'temurin'
 
     - name: Run tests
       run: ./gradlew test
